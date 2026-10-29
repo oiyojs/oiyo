@@ -1,0 +1,85 @@
+{
+  "name": "@oiyojs/oiyo",
+  "type": "module",
+  "version": "0.8.3",
+  "description": "以融合AI协作、提升开发体验、降低使用心智为目的 UniApp 增强型工程框架",
+  "author": {
+    "name": "skiyee",
+    "email": "319619193@qq.com",
+    "url": "https://skiyee.pages.dev"
+  },
+  "license": "Apache-2.0",
+  "funding": "https://github.com/skiyee/sponsors",
+  "homepage": "https://oiyo.js.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oiyojs/oiyo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oiyojs/oiyo/issues"
+  },
+  "keywords": [
+    "uniapp",
+    "vue",
+    "vite"
+  ],
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.cts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./global": {
+      "types": {
+        "import": "./dist/global.d.mts",
+        "require": "./dist/global.d.cts"
+      },
+      "import": "./dist/global.mjs",
+      "require": "./dist/global.cjs"
+    },
+    "./plugin": {
+      "types": {
+        "import": "./dist/plugin.d.mts",
+        "require": "./dist/plugin.d.cts"
+      },
+      "import": "./dist/plugin.mjs",
+      "require": "./dist/plugin.cjs"
+    },
+    "./config": {
+      "types": {
+        "import": "./dist/config.d.mts",
+        "require": "./dist/config.d.cts"
+      },
+      "import": "./dist/config.mjs",
+      "require": "./dist/config.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "NOTICE",
+    "THIRD_PARTY_NOTICES.md",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=10.0.0 <11.0.0"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "peerDependencies": {
+    "vite": "catalog:"
+  },
+  "dependencies": {
+    "@oiyo/cli": "workspace:*",
+    "@oiyo/config": "workspace:*",
+    "@oiyo/core": "workspace:*",
+    "@oiyo/plugin": "workspace:*"
+  }
+}
