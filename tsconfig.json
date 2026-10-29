@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@oiyo/core": ["./packages/oiyo-core/src/index.ts"],
+      "@oiyo/config": ["./packages/oiyo-config/src/index.ts"],
+      "@oiyo/cli": ["./packages/oiyo-cli/src/index.ts"],
+      "@oiyo/plugin": ["./packages/oiyo-plugin/src/index.ts"]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "node",
+      "vite/client"
+    ],
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "**/dist/**",
+    "**/node_modules/**"
+  ]
+}

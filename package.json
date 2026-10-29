@@ -1,0 +1,33 @@
+{
+  "name": "oiyo-monorepo",
+  "type": "module",
+  "version": "0.8.3",
+  "private": true,
+  "packageManager": "pnpm@10.27.0",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "dev": "pnpm --filter=./packages/* -r dev",
+    "build": "pnpm --filter=./packages/* -r build",
+    "clean": "rm -rf dist",
+    "lint": "eslint .",
+    "bump": "pnpm bumpp -r",
+    "sync:packages": "node ./scripts/sync-package-files.mjs"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/core": "^0.18.2",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@skiyee/eslint-config": "^0.2.1",
+    "@types/node": "^22.15.18",
+    "bumpp": "^11.1.0",
+    "eslint": "~9.39.2",
+    "husky": "^9.1.7",
+    "tsdown": "^0.22.9",
+    "typescript": "~5.9.3"
+  }
+}

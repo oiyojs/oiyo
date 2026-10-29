@@ -1,0 +1,20 @@
+packages:
+  - packages/*
+  - example
+
+catalog:
+  "@dcloudio/types": 3.4.31
+  "@vue/compiler-sfc": 3.4.21
+  ansis: ^4.2.0
+  c12: ^3.3.3
+  defu: ^6.1.7
+  vite: 5.2.8
+  vue: 3.4.21
+
+onlyBuiltDependencies:
+  - core-js
+  - esbuild
+  - unrs-resolver
+  - vue-demi
+
+shamefullyHoist: true
