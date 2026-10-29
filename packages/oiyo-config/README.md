@@ -19,36 +19,33 @@
     <a href="https://oiyo.js.org"><img alt="DOCS" src="https://img.shields.io/badge/docs-oiyo-D47F24?labelColor=%23130E0A&color=%23D47F24"></a>
     <a href="https://github.com/oiyojs/oiyo/blob/main/LICENSE"><img alt="LICENSE" src="https://img.shields.io/badge/license-Apache--2.0-D47F24?labelColor=130E0A&color=D47F24"></a>
   </p>
-</div>
 
-<div align="center">
-
-<table align="center">
-  <thead>
-    <tr>
-      <th>平台</th>
-      <th>微信小程序</th>
-      <th>支付宝小程序</th>
-      <th>抖音小程序</th>
-      <th>小红书小程序</th>
-      <th>H5(web)</th>
-      <th>IOS(vue)</th>
-      <th>Android(vue)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>UniApp</td>
-      <td>√</td>
-      <td>√</td>
-      <td>√</td>
-      <td>?</td>
-      <td>√</td>
-      <td>√</td>
-      <td>√</td>
-    </tr>
-  </tbody>
-</table>
+  <table align="center">
+    <thead>
+      <tr>
+        <th>平台</th>
+        <th>H5</th>
+        <th>IOS(vue)</th>
+        <th>Android(vue)</th>
+        <th>微信小程序</th>
+        <th>支付宝小程序</th>
+        <th>抖音小程序</th>
+        <th>小红书小程序</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>UniApp</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+        <td>√</td>
+        <td>?</td>
+      </tr>
+    </tbody>
+  </table>
 
 </div>
 
@@ -56,6 +53,19 @@
 
 - Node.js >= 18
 - pnpm <= 10
+
+## ✨ 特性
+
+| 核心特性                                                       | 说明                                                                                         |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| [自动路由](https://oiyo.js.org/docs/manual/page/register)      | 按约定目录扫描生成 `pages.json`，一个页面文件即一条路由，不再手动维护                        |
+| [页面元信息](https://oiyo.js.org/docs/manual/page/meta)        | `definePageMeta()` 将导航栏样式、首页声明、TabBar 配置写在页面内，减少跨文件心智切换         |
+| [布局系统](https://oiyo.js.org/docs/manual/shell/layout)       | 布局在 `src/layouts` 定义一次，页面中一行 `layout` 声明即可复用，业务逻辑与容器彻底分离      |
+| [根上下文](https://oiyo.js.org/docs/manual/shell/root-context) | `defineRootContext()` 配合 `useRootContext()`，在 `App.vue` 统一声明全局弹窗与开关，随处使用 |
+| [跳转守卫](https://oiyo.js.org/docs/manual/page/middleware)    | 命名中间件与全局中间件，支持异步拦截、`goTo()` 重定向、`abortNavigation()` 取消              |
+| [自动导入](https://oiyo.js.org/docs/manual/scan/api)           | 自动扫描 API 与组件，常用路径内置，无需手动 import，类型提示完整                             |
+| [数据请求](https://oiyo.js.org/docs/manual/data/http)          | 开箱即用的 `http` 客户端，内置分层派生实例、生命周期钩子、自动重试与请求取消                 |
+| [工程约定](https://oiyo.js.org/docs/structure)                 | 固定目录结构 + 三层配置文件，输出稳定可预测的项目结构，人、团队与 AI 都能读懂                |
 
 ## 🎉 开始
 
