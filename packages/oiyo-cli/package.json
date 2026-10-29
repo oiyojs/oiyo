@@ -1,0 +1,59 @@
+{
+  "name": "@oiyo/cli",
+  "type": "module",
+  "version": "0.8.3",
+  "author": {
+    "name": "skiyee",
+    "email": "319619193@qq.com",
+    "url": "https://skiyee.pages.dev"
+  },
+  "license": "Apache-2.0",
+  "funding": "https://github.com/skiyee/sponsors",
+  "homepage": "https://oiyo.js.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oiyojs/oiyo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oiyojs/oiyo/issues"
+  },
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.cts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "bin": {
+    "oiyo": "./bin/oiyo.mjs",
+    "uni": "./bin/oiyo.mjs"
+  },
+  "files": [
+    "NOTICE",
+    "THIRD_PARTY_NOTICES.md",
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "dependencies": {
+    "@clack/prompts": "0.11.0",
+    "@oiyo/config": "workspace:*",
+    "@oiyo/core": "workspace:*",
+    "ansis": "catalog:",
+    "c12": "catalog:",
+    "citty": "^0.2.2",
+    "consola": "^3.4.2",
+    "execa": "^9.5.2",
+    "pathe": "^2.0.3"
+  }
+}
