@@ -1,0 +1,64 @@
+{
+  "name": "@oiyo/core",
+  "type": "module",
+  "version": "0.8.3",
+  "author": {
+    "name": "skiyee",
+    "email": "319619193@qq.com",
+    "url": "https://skiyee.pages.dev"
+  },
+  "license": "Apache-2.0",
+  "funding": "https://github.com/skiyee/sponsors",
+  "homepage": "https://oiyo.js.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oiyojs/oiyo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oiyojs/oiyo/issues"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "NOTICE",
+    "THIRD_PARTY_NOTICES.md",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown --env.NODE_ENV production",
+    "dev": "tsdown --watch --env.NODE_ENV development"
+  },
+  "peerDependencies": {
+    "vite": "catalog:",
+    "vue": "catalog:"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.29.0",
+    "@babel/traverse": "^7.29.0",
+    "@babel/types": "^7.29.0",
+    "@oiyo/config": "workspace:*",
+    "@vue/compiler-sfc": "catalog:",
+    "ansis": "catalog:",
+    "c12": "catalog:",
+    "chokidar": "4.0.3",
+    "defu": "catalog:",
+    "magic-string": "^0.30.21",
+    "pathe": "^2.0.3",
+    "tinyglobby": "^0.2.15"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "catalog:",
+    "@types/babel__traverse": "^7.28.0",
+    "vite": "catalog:",
+    "vue": "catalog:"
+  }
+}

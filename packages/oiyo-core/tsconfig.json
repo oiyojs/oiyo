@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "#/*": ["./src/module/*"],
+      "~/*": ["./src/*"]
+    },
+    "types": ["@dcloudio/types"],
+    "removeComments": true
+  }
+}
