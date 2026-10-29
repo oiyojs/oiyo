@@ -1,0 +1,65 @@
+{
+  "name": "@oiyo/plugin",
+  "type": "module",
+  "version": "0.8.3",
+  "author": {
+    "name": "skiyee",
+    "email": "319619193@qq.com",
+    "url": "https://skiyee.pages.dev"
+  },
+  "license": "Apache-2.0",
+  "funding": "https://github.com/skiyee/sponsors",
+  "homepage": "https://oiyo.js.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skiyee/oiyo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skiyee/oiyo/issues"
+  },
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.cts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "NOTICE",
+    "THIRD_PARTY_NOTICES.md",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "peerDependencies": {
+    "@dcloudio/uni-cli-shared": "*",
+    "@dcloudio/vite-plugin-uni": "*",
+    "vite": "catalog:"
+  },
+  "peerDependenciesMeta": {
+    "@dcloudio/uni-cli-shared": {
+      "optional": true
+    },
+    "@dcloudio/vite-plugin-uni": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@oiyo/config": "workspace:*",
+    "@oiyo/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-cli-shared": "3.0.0-5020620260917001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-5020620260917001",
+    "vite": "catalog:"
+  }
+}
