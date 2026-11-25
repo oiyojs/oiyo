@@ -14,8 +14,8 @@
   <p>开箱即用 · 融合AI协作 · 优秀开发体验 · 超低心智成本</p>
 
   <p>
-    <a href="https://www.github.com/skiyee/oiyo"><img alt="NPM version" src="https://img.shields.io/npm/v/@skiyee/oiyo?color=D47F24&labelColor=130E0A&label=npm"></a>
-    <a href="https://www.github.com/skiyee/oiyo"><img alt="NPM downloads" src="https://img.shields.io/npm/dm/@skiyee/oiyo?color=D47F24&labelColor=130E0A&label=downloads"></a>
+    <a href="https://www.github.com/oiyojs/oiyo"><img alt="NPM version" src="https://img.shields.io/npm/v/oiyo?color=D47F24&labelColor=130E0A&label=npm"></a>
+    <a href="https://www.github.com/oiyojs/oiyo"><img alt="NPM downloads" src="https://img.shields.io/npm/dm/oiyo?color=D47F24&labelColor=130E0A&label=downloads"></a>
     <a href="https://oiyo.js.org"><img alt="DOCS" src="https://img.shields.io/badge/docs-oiyo-D47F24?labelColor=%23130E0A&color=%23D47F24"></a>
     <a href="https://github.com/oiyojs/oiyo/blob/main/LICENSE"><img alt="LICENSE" src="https://img.shields.io/badge/license-Apache--2.0-D47F24?labelColor=130E0A&color=D47F24"></a>
   </p>

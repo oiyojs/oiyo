@@ -114,7 +114,7 @@ CLI 命令调整为 `prepare`/`dev`/`build`/`preview`/`upload`。`dev` 在 `ide.
 - 修复 API 扫描误将 Vue 单文件组件纳入的问题。
 - 补充 `GlobalStyle.disableScroll` 类型声明。
 
-升级过程中遇到问题，欢迎在 [GitHub Issues](https://github.com/skiyee/oiyo/issues) 反馈。Happy coding with oiyo 1.0! 🚀
+升级过程中遇到问题，欢迎在 [GitHub Issues](https://github.com/oiyojs/oiyo/issues) 反馈。Happy coding with oiyo 1.0! 🚀
 
 ## v0.8.5
 

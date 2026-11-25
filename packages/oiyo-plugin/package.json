@@ -12,10 +12,10 @@
   "homepage": "https://oiyo.js.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skiyee/oiyo.git"
+    "url": "git+https://github.com/oiyojs/oiyo.git"
   },
   "bugs": {
-    "url": "https://github.com/skiyee/oiyo/issues"
+    "url": "https://github.com/oiyojs/oiyo/issues"
   },
   "exports": {
     ".": {
