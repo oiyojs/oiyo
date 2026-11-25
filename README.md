@@ -49,6 +49,12 @@
 
 </div>
 
+## 📖 文档
+
+阅读文档，进一步挖掘该框架更多的功能！
+
+Oiyo 官方文档: [oiyo.js.org/docs](https://oiyo.js.org/docs)
+
 ## 💻 要求
 
 - Node.js >= 18
@@ -80,12 +86,6 @@ pnpm create oiyo@latest
 | [oiyo/standard](https://github.com/skiyee/oiyo-starters/tree/main)           | pnpm create oiyo --template=standard    | 基于 oiyo 赋能的 最佳实践 起步项目    |
 | [oiyo/unibest](https://github.com/skiyee/oiyo-starters/tree/unibest)         | pnpm create oiyo --template=unibest     | 基于 oiyo 赋能的 unibest 起步项目     |
 | [oiyo/wot-starter](https://github.com/skiyee/oiyo-starters/tree/wot-starter) | pnpm create oiyo --template=wot-starter | 基于 oiyo 赋能的 wot-starter 起步项目 |
-
-## 📖 文档
-
-强烈建议阅读文档，进一步挖掘该框架更多的功能！
-
-Oiyo 官方文档: [oiyo.js.org/docs](https://oiyo.js.org/docs)
 
 ## 💞 社群
 
